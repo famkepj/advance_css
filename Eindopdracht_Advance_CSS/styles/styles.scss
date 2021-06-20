@@ -1,0 +1,116 @@
+@import"./constants";
+@import"./grid";
+
+.design{
+    background-color: $background_grey;
+    width: 750px;
+    padding: 50px;
+}
+
+main{
+    @include standaard;
+    text-align: left;
+    line-height: 70px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: $background_white;
+    margin-bottom: -150px;
+
+    img{
+        width:200px; 
+        border-radius:200px;
+        -webkit-box-shadow: 0px 0px 0px 21px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 0px 21px rgba(255,255,255,1);
+        box-shadow: 0px 0px 0px 8px rgba(255,255,255,1); 
+        transform: translateX(250px)
+    }
+}
+
+
+
+footer{
+    @include standaard;
+    background-color: $color_purple;
+    height: 300px;
+    h1{
+        color: $background_white;
+        margin-top: 100px;
+    }    
+    h2{
+        color: rgb(201, 201, 201);
+    }
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    -webkit-box-shadow: 10px 49px 100px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 49px 100px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 49px 100px 0px rgba(0,0,0,0.5);
+}
+
+
+.interactie{
+    background-color: $background_grey;
+    margin-top: 100px;
+    padding: 50px;
+    max-width: 1350px;
+
+    img, .mask1, .mask2, .mask3, .mask4, .mask5, .mask6, .mask7{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: black;    
+        transition:1000ms ease-in ;
+    }
+
+    button{
+        border-radius: 2px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        margin: 185px 150px;
+    }
+
+    .mask1, .mask2, .mask3, .mask4, .mask5, .mask6, .mask7{ 
+        opacity:0; 
+        &:hover{
+            opacity: 1;
+        } 
+    }  
+}
+
+.social_media{
+    background-color: $background_grey;
+    margin-top: 100px;
+    color: white;
+    transition-duration: 250ms;
+    transition-property: transform;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    height: 700px;
+   
+    @include nav_social_media;
+
+    nav:nth-child(4){
+        background-color: #00aced;  
+    }
+
+    nav:nth-child(3){
+        background-color: #007bb6;
+    }
+
+    nav:nth-child(2){
+        background-color: #3b5998;
+    }
+
+    nav:nth-child(1){
+        background-color: #333;
+    }
+
+}
+        
+    
+    
+
+

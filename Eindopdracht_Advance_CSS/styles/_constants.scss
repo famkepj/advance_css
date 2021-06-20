@@ -1,0 +1,67 @@
+$color_purple:#686de0;
+$background_grey: #c3cfe2;
+$background_white: #fff;
+$padding_standaard: 20px;
+
+
+@mixin standaard {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding_standaard;
+  color: rgb(75, 73, 73);
+} 
+
+h1 {
+    font-size: 3em;
+    font-weight:500;
+}
+
+h2{
+    font-size: 2em;
+}
+
+@media(max-width:400px){
+  .design{
+    max-width: 95%;
+  }
+} 
+
+@mixin nav_social_media{
+
+  nav{
+    width: 100px;
+    height: 100px;
+    background-color: #e17b77;
+    position: relative;
+   
+
+    a{
+      color: white;
+      opacity: 0;
+      font-size: 20px;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-40%, -50%);
+    }
+
+    img{
+      width: 60px;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+   
+    &:hover{
+      width: 500px;
+      img{
+        margin: 50px;
+        margin-top: 20px;
+      }
+      a{
+        opacity: 1;
+      }
+    }
+  }
+}
