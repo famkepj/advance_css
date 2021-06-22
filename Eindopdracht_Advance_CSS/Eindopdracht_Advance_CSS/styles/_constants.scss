@@ -1,0 +1,99 @@
+$color_purple:#686de0;
+$background_grey: #c3cfe2;
+$background_white: #fff;
+$padding_standaard: 20px;
+
+body{
+  background-color: $background_grey;
+}
+
+@mixin standaard {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding_standaard;
+  color: rgb(75, 73, 73);
+} 
+
+h1 {
+    font-size: 3em;
+    font-weight:500;
+}
+
+h2{
+    font-size: 2em;
+}
+
+@media(max-width:320px){
+  .design{
+    max-width: 95%;
+  }
+} 
+
+@mixin nav_social_media{
+
+  nav{
+    width: 100px;
+    height: 100px;
+    background-color: #e17b77;
+    position: relative;
+    animation-duration: 1000ms;
+    animation-name: hover-off ;
+
+    a{
+      color: white;
+      opacity: 0;
+      font-size: 20px;
+      position: absolute;
+      animation-duration: 1500ms;
+      animation-name: tekst-off;
+    }
+
+    img{
+      width: 60px;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    &:hover{
+      animation-duration: 1000ms;
+      animation-name: knop;
+      animation-fill-mode: forwards;
+      
+      img{
+        margin: 50px;
+        margin-top: 20px;
+      }
+      a{
+        top:50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        animation-duration: 1500ms;
+        animation-name: tekst;
+        animation-fill-mode: forwards;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+@keyframes knop{
+ from {}
+ to {width: 400px}
+}
+
+@keyframes hover-off{
+  from{width: 400px}
+  to {width: 100px}
+}
+
+@keyframes tekst{
+from {transform: translateX(1500px)}
+to  {transform: translateX(-50px)}
+}
+
+@keyframes tekst-off{
+  from {transform: translateX(-50px)}
+  to  {transform: translateX(1500px)}
+  }

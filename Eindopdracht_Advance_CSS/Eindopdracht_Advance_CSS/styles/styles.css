@@ -1,0 +1,464 @@
+@charset "UTF-8";
+body {
+  background-color: #c3cfe2;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+@media (max-width: 320px) {
+  .design {
+    max-width: 95%;
+  }
+}
+
+@-webkit-keyframes knop {
+  from {
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes knop {
+  from {
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@-webkit-keyframes hover-off {
+  from {
+    width: 400px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes hover-off {
+  from {
+    width: 400px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@-webkit-keyframes tekst {
+  from {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@keyframes tekst {
+  from {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@-webkit-keyframes tekst-off {
+  from {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  to {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+}
+
+@keyframes tekst-off {
+  from {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  to {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+}
+
+.interactie {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+  -ms-grid-columns: 350px;
+      grid-template-columns: 350px;
+  -ms-grid-rows: ( 450px)[7];
+      grid-template-rows: repeat(7,  450px);
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.interactie .eerste, .interactie .mask1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  /* start rij/ start kolom/ eind rij/ eind kolom*/
+}
+
+.interactie .tweede, .interactie .mask2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+}
+
+.interactie .derde, .interactie .mask3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/4/2;
+}
+
+.interactie .vierde, .interactie .mask4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 4/1/5/2;
+}
+
+.interactie .vijfde, .interactie .mask5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5/1/6/2;
+}
+
+.interactie .zesde, .interactie .mask6 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 6/1/7/2;
+}
+
+.interactie .zevende, .interactie .mask7 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 7/1/8/2;
+}
+
+@media (min-width: 750px) {
+  .interactie {
+    -ms-grid-columns: ( 450px)[2];
+        grid-template-columns: repeat(2,  450px);
+    -ms-grid-rows: ( 450px)[4];
+        grid-template-rows: repeat(4,  450px);
+  }
+  .interactie .eerste, .interactie .mask1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/2/2;
+  }
+  .interactie .tweede, .interactie .mask2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
+  }
+  .interactie .derde, .interactie .mask3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/4/2;
+  }
+  .interactie .vierde, .interactie .mask4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/5/2;
+  }
+  .interactie .vijfde, .interactie .mask5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/2/3;
+  }
+  .interactie .zesde, .interactie .mask6 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/3/3;
+  }
+  .interactie .zevende, .interactie .mask7 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/4/3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interactie {
+    -ms-grid-columns: ( 540px)[3];
+        grid-template-columns: repeat(3,  540px);
+    -ms-grid-rows: ( 450px)[3];
+        grid-template-rows: repeat(3,  450px);
+  }
+  .interactie .eerste, .interactie .mask1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/2/2;
+    /* start rij/ start kolom/ eind rij/ eind kolom*/
+  }
+  .interactie .tweede, .interactie .mask2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
+  }
+  .interactie .derde, .interactie .mask3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/4/2;
+  }
+  .interactie .vierde, .interactie .mask4 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/2/3;
+  }
+  .interactie .vijfde, .interactie .mask5 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/3/3;
+  }
+  .interactie .zesde, .interactie .mask6 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1/3/2/4;
+  }
+  .interactie .zevende, .interactie .mask7 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/3/4;
+  }
+}
+
+.design {
+  background-color: #c3cfe2;
+  width: 750px;
+  padding: 50px;
+}
+
+main {
+  max-width: 700px;
+  text-align: center;
+  padding: 20px;
+  color: #4b4949;
+  text-align: left;
+  line-height: 70px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #fff;
+  margin-bottom: -150px;
+}
+
+main img {
+  width: 200px;
+  border-radius: 200px;
+  -webkit-box-shadow: 0px 0px 0px 21px white;
+  box-shadow: 0px 0px 0px 8px white;
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
+}
+
+footer {
+  max-width: 700px;
+  text-align: center;
+  padding: 20px;
+  color: #4b4949;
+  background-color: #686de0;
+  height: 300px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: 10px 49px 100px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 49px 100px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer h1 {
+  color: #fff;
+  margin-top: 100px;
+}
+
+footer h2 {
+  color: #c9c9c9;
+}
+
+.interactie {
+  background-color: #c3cfe2;
+  margin-top: 100px;
+  padding: 50px;
+  max-width: 1050px;
+}
+
+.interactie img, .interactie .mask1, .interactie .mask2, .interactie .mask3, .interactie .mask4, .interactie .mask5, .interactie .mask6, .interactie .mask7 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: black;
+  -webkit-transition: 1000ms ease-in;
+  transition: 1000ms ease-in;
+}
+
+.interactie button {
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  margin: 85px 55px;
+}
+
+.interactie .mask1, .interactie .mask2, .interactie .mask3, .interactie .mask4, .interactie .mask5, .interactie .mask6, .interactie .mask7 {
+  opacity: 0;
+}
+
+.interactie .mask1:hover, .interactie .mask2:hover, .interactie .mask3:hover, .interactie .mask4:hover, .interactie .mask5:hover, .interactie .mask6:hover, .interactie .mask7:hover {
+  opacity: 1;
+}
+
+.social_media {
+  background-color: #c3cfe2;
+  margin-top: 100px;
+  color: white;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 10px;
+  height: 700px;
+}
+
+.social_media nav {
+  width: 100px;
+  height: 100px;
+  background-color: #e17b77;
+  position: relative;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-name: hover-off;
+          animation-name: hover-off;
+}
+
+.social_media nav a {
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-name: tekst-off;
+          animation-name: tekst-off;
+}
+
+.social_media nav img {
+  width: 60px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.social_media nav:hover {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-name: knop;
+          animation-name: knop;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.social_media nav:hover img {
+  margin: 50px;
+  margin-top: 20px;
+}
+
+.social_media nav:hover a {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-name: tekst;
+          animation-name: tekst;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.social_media nav:nth-child(4) {
+  background-color: #00aced;
+}
+
+.social_media nav:nth-child(3) {
+  background-color: #007bb6;
+}
+
+.social_media nav:nth-child(2) {
+  background-color: #3b5998;
+}
+
+.social_media nav:nth-child(1) {
+  background-color: #333;
+}
+/*# sourceMappingURL=styles.css.map */
